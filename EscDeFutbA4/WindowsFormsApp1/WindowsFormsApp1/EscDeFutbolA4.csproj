@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1155CDAF-A066-483A-BDDD-1BBC3DDFC455}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SisFutA4</RootNamespace>
+    <AssemblyName>SisFutA4</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>olympics_sport_football_ball_2277.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmConsultaFutbolCampo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaFutbolCampo.Designer.cs">
+      <DependentUpon>FrmConsultaFutbolCampo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaFutsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaFutsal.Designer.cs">
+      <DependentUpon>FrmConsultaFutsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFinanzas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinanzas.Designer.cs">
+      <DependentUpon>FrmFinanzas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFinanzasFutbolCampo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinanzasFutbolCampo.Designer.cs">
+      <DependentUpon>FrmFinanzasFutbolCampo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFinanzasHijoFutsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFinanzasHijoFutsal.Designer.cs">
+      <DependentUpon>FrmFinanzasHijoFutsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFutbolCampo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFutbolCampo.Designer.cs">
+      <DependentUpon>FrmFutbolCampo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFutsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFutsal.Designer.cs">
+      <DependentUpon>FrmFutsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPanelPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPanelPrincipal.Designer.cs">
+      <DependentUpon>FRMPanelPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroFutCampo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroFutCampo.Designer.cs">
+      <DependentUpon>FrmRegistroFutCampo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroFutsal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroFutsal.Designer.cs">
+      <DependentUpon>FrmRegistroFutsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modulo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmConsultaFutbolCampo.resx">
+      <DependentUpon>FrmConsultaFutbolCampo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaFutsal.resx">
+      <DependentUpon>FrmConsultaFutsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinanzas.resx">
+      <DependentUpon>FrmFinanzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinanzasFutbolCampo.resx">
+      <DependentUpon>FrmFinanzasFutbolCampo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFinanzasHijoFutsal.resx">
+      <DependentUpon>FrmFinanzasHijoFutsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFutbolCampo.resx">
+      <DependentUpon>FrmFutbolCampo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFutsal.resx">
+      <DependentUpon>FrmFutsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPanelPrincipal.resx">
+      <DependentUpon>FRMPanelPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroFutCampo.resx">
+      <DependentUpon>FrmRegistroFutCampo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroFutsal.resx">
+      <DependentUpon>FrmRegistroFutsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="olympics_sport_football_ball_2277.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
